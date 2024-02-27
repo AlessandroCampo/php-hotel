@@ -59,14 +59,14 @@ $min_vote = $_GET['min_vote'];
 
 <body>
 
-    <form class="mb-5 w-25 ms-5" action='/boolean-ex/php-hotel/index.php' method="get">
+    <form class="mb-5 w-25 ms-5" action='/boolean-ex/php-hotel-1/index.php' method="get">
         <div class="mb-3 form-check d-flex gap-3 align-items-center">
             <label class="form-label" for="parkCheck">With park</label>
             <input type="checkbox" class="form-input fs-1" id="parkCheck" name="with_park">
         </div>
         <div class="mb-3 form-check d-flex gap-3 align-items-center">
             <label for="vote_min" class="form-label">Minimum Vote</label>
-            <input type="number" class="form-control fs-6 w-25" id="vote_min" max="5" name="min_vote">
+            <input type="number" class="form-control fs-6 w-25" id="vote_min" max="5" min="0" name="min_vote">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
